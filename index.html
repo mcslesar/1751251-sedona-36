@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <body>
@@ -25,17 +26,17 @@
                 </ul>
                 <ul class="header-page__list">
                     <li class="header-page__item">
-                        <a class="header-page__link" href="#">
-                            <span class="vissualy-hidden">Поиск</span>
+                        <a class="header-page__link header-page__link-search" href="#">
+                            <span class="visually-hidden">Поиск</span>
                         </a>
                     </li>
                     <li class="header-page__item">
-                        <a class="header-page__link" href="index.html">
-                            <span class="vissualy-hidden">Избранное</span>
+                        <a class="header-page__link header-page__link-favorites" href="index.html">
+                            <span class="visually-hidden">Избранное</span>
                         </a>
                     </li>
                     <li class="header-page__item">
-                        <a class="header-page__link header-page__btn" href="#">Хочу сюда!</a>
+                        <a class="header-page__link header-page__btn button" href="#">Хочу сюда!</a>
                     </li>
                 </ul>
             </nav>
@@ -46,24 +47,22 @@
                 <div class="promo__images-container">
                     <img class="promo__title" src="images/main/promo-title.svg" width="458" height="352"
                         alt="Текст приветствия в Седону и слоган.">
-                    <h1 class="vissualy-hidden">SEDONA</h1>
+                    <h1 class="visually-hidden">SEDONA</h1>
                 </div>
 
             </section>
             <!-- Преимущества -->
             <section class="advantages">
-                <h2 class="vissually-hidden">Преимущества</h2>
-                <p class="promo__text title-main">Седона — небольшой городок в Аризоне,
-                    заслуживающий большего!</p>
+                <h2 class="promo__text title-main">Седона — небольшой городок в Аризоне,
+                    заслуживающий большего!</h2>
                 <p class="promo__subtext">
                     Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
                 </p>
-                <!-- Первая строка блоков в этом разделе -->
                 <ul class="advantages__list">
                     <li class="advantages__item">
                         <div class="advantages__wrapper">
-                            <h3 class="advantages__title">Настоящий городок</h3>
-                            <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                            <h3 class="advantages__title box-title">Настоящий городок</h3>
+                            <p class="advantages__text box-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         </div>
                     </li>
                     <li class="advantages__item">
@@ -72,23 +71,23 @@
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__wrapper">
-                            <h3 class="advantages__title">Небольшая
+                            <h3 class="advantages__title box-title">Небольшая
                                 площадь</h3>
-                            <p class="advantages__text">Все достопримечательности находятся очень близко</p>
+                            <p class="advantages__text box-subtitle">Все достопримечательности находятся очень близко</p>
                         </div>
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__wrapper">
-                            <h3 class="advantages__title">Красивая
+                            <h3 class="advantages__title box-title">Красивая
                                 дорога</h3>
-                            <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                            <p class="advantages__text box-subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                         </div>
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__wrapper">
-                            <h3 class="advantages__title">Мало
+                            <h3 class="advantages__title box-title">Мало
                                 туристов</h3>
-                            <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+                            <p class="advantages__text box-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
                         </div>
                     </li>
                     <li class="advantages__item">
@@ -98,33 +97,33 @@
                     <li class="advantages__item">
 
                         <div class="advantages__wrapper">
-                            <h3 class="advantages__title">Там есть
+                            <h3 class="advantages__title box-title">Там есть
                                 мост дьявола</h3>
-                            <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                            <p class="advantages__text box-subtitle">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                         </div>
                     </li>
                 </ul>
             </section>
             <!-- Обслуживание -->
             <section class="service">
-                <h2 class="service__title title-main">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+                <h2 class="service__title title-main">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
                     <p class="service__description">Опытный персонал и качественное обслуживание!</p>
                     <ul class="service__list">
                         <li class="service__item">
-                            <span class="service__image"></span>
-                            <h3 class="service__box-title">Жильё</h3>
+                            <span class="service__image-home"></span>
+                            <h3 class="service__box-title box-title">Жильё</h3>
                             <p class="service__text">Рекомендуем пожитьв настоящем мотеле,
                                 всё как в кино!</p>
                         </li>
                         <li class="service__item">
-                            <span class="service__image"></span>
-                            <h3 class="service__box-title">Еда</h3>
+                            <span class="service__image-food"></span>
+                            <h3 class="service__box-title box-title">Еда</h3>
                             <p class="service__text">Всегда заказывайте
                                 топовый фирменный бургер, вы не разочаруетесь!</p>
                         </li>
                         <li class="service__item">
-                            <span class="service__image"></span>
-                            <h3 class="service__box-title">Сувениры</h3>
+                            <span class="service__image-box"></span>
+                            <h3 class="service__box-title box-title">Сувениры</h3>
                             <p class="service__text">Не только китайского,
                                 но и настоящего местного производства!</p>
                         </li>
@@ -132,11 +131,11 @@
             </section>
             <!-- Поиск -->
             <section class="search">
-                <h2 class="search__title title-main">Заинтересовались?</p>
-                    <span class="search__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие
+                <h2 class="search__title title-main">Заинтересовались?</h2>
+                    <p class="search__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие
                         предложения
-                        гостиниц в Седоне</span>
-                    <a class="search__link" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
+                        гостиниц в Седоне</p>
+                    <a class="search__link button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
             </section>
         </main>
         <footer class="page-footer">
@@ -145,19 +144,25 @@
                 <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form action="" class="subscrive__form">
                     <input class="subscibe__input" type="email" placeholder="Ваш e-mail" size="30" required>
-                    <button class="subscribe__btn" type="submit">Подписаться</button>
+                    <button class="subscribe__btn light-button" type="submit">Подписаться</button>
                 </form>
             </div>
             <div class="social">
                 <ul class="social__list">
                     <li class="social__item">
-                        <a href="https://vk.com/htmlacademy" class="social__link"></a>
+                        <a class="social__link-vk" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Мы в Вконтакте</span>
+                        </a>
                     </li>
                     <li class="social__item">
-                        <a href="https://web.telegram.org/k/#@htmlacademy" class="social__link"></a>
+                        <a class="social__link-telegram" href="https://web.telegram.org/k/#@htmlacademy" >
+                            <span class="visually-hidden">Мы в Телеграм</span>
+                        </a>
                     </li>
                     <li class="social__item">
-                        <a href="https://www.youtube.com/@HTMLAcademyRUS" class="social__link"></a>
+                        <a class="social__link-youtube" href="https://www.youtube.com/@HTMLAcademyRUS" >
+                            <span class="visually-hidden">Мы в Ютубе</span>
+                        </a>
                     </li>
                 </ul>
                 <a class="social__number" href="tel:88128121212">+7 (812) 812-12-12</a>

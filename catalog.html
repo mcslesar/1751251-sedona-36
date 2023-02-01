@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
         <title>Седона: Каталог</title>
     </head>
 
@@ -36,7 +37,7 @@
                         </a>
                     </li>
                     <li class="header-page__item">
-                        <a class="header-page__link header-page__btn" href="#">Хочу сюда!</a>
+                        <a class="header-page__link header-page__btn button" href="#">Хочу сюда!</a>
                     </li>
                 </ul>
             </nav>
@@ -46,10 +47,10 @@
                 <h1 class="main__title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs-list">
                     <li class="breadcrumbs-item">
-                        <a class="breadcrumbs-link" href="index.html"><span class="vissually-hidden">Главная</span></a>
+                        <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
                     </li>
                     <li class="breadcrumbs-item">
-                        <a class="breadcrumbs-link">Каталог</a>
+                        <a class="breadcrumbs-link">Гостиницы</a>
                     </li>
                 </ul>
                 <section class="filters">
@@ -63,21 +64,18 @@
                                     <li class="catalog-filter-item">
                                         <label class="control">
                                             <input class="control-input" type="checkbox" name="pool">
-
                                             Бассейн
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control">
                                             <input class="control-input" type="checkbox" name="parking" checked>
-
                                             Парковка
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control">
                                             <input class="control-input" type="checkbox" name="wifi" checked>
-
                                             Wi-fi
                                         </label>
                                     </li>
@@ -115,12 +113,12 @@
 
                             <fieldset class="catalog-filter-group">
                                 <legend class="catalog-filter-title">Стоимость,Р:</legend>
-                                <input type="number" max="100" min="0">
-                                <input type="number" max="100" min="0">
+                                <input type="number" value="0" max="100" min="0">
+                                <input type="number" value="9000" max="10000" min="0">
                                 <input type="range" max="100" min="0">
                             </fieldset>
                             <div class="filter__wrapper-btn">
-                                <button class="filter__button" type="submit">Применить</button>
+                                <button class="filter__button light-button" type="submit">Применить</button>
                                 <button class="filter__button" type="reset">Сбросить</button>
                             </div>
                         </div>
@@ -128,10 +126,10 @@
                 </section>
             </header>
             <section class="apartaments">
-                <h2 class="apartments__title">Найдено гостиниц:38</h2>
+                <h2 class="apartments__title">Найдено гостиниц:<span class="appartments__number">38</span></h2>
                 <select class="select-control" aria-label="Сортировка">
-                    <option value="popular">Сначала популярное</option>
-                    <option value="cheap">Сначала дешёвое</option>
+                    <option value="popular">Сначала дешёвые</option>
+                    <option value="cheap">Сначала популярное</option>
                     <option value="expensive">Сначала дорогое</option>
                 </select>
                 <a href="#" class="apartments__button button--active">
@@ -152,10 +150,10 @@
                         </a>
                         <span class="product-card__description">Гостиница</span>
                         <b class="product-card-price">От 4000 ₽</b>
-                        <a class="product-card-button " href="#">Подбробнее</a>
-                        <button class="product-card__favorites">В избранное</button>
-                        <div class="product-card__rating-stars">
-                            <span class="four-stars"></span>
+                        <a class="product-card-button button " href="#">Подбробнее</a>
+                        <button class="product-card__favorites light-button">В избранное</button>
+                        <div class="product-card__wrapper">
+                            <span class="product-card__rating-stars four-stars"></span>
                         </div>
                         <span class="product-card__rate">Рейтинг:8,5</span>
                     </li>
@@ -167,10 +165,10 @@
                         </a>
                         <span class="product-card__description">Гостиница</span>
                         <b class="product-card-price">От 4000 ₽</b>
-                        <a class="product-card-button " href="#">Подбробнее</a>
-                        <button class="product-card__favorites">В избранное</button>
-                        <div class="product-card__rating-stars">
-                            <span class="four-stars"></span>
+                        <a class="product-card-button button " href="#">Подбробнее</a>
+                        <button class="product-card__favorites light-button">В избранное</button>
+                        <div class="product-card__wrapper">
+                            <span class="product-card__rating-stars four-stars"></span>
                         </div>
                         <span class="product-card__rate">Рейтинг:8,5</span>
                     </li>
@@ -182,10 +180,10 @@
                         </a>
                         <span class="product-card__description">Гостиница</span>
                         <b class="product-card-price">От 4000 ₽</b>
-                        <a class="product-card-button " href="#">Подбробнее</a>
-                        <button class="product-card__favorites">В избранное</button>
-                        <div class="product-card__rating-stars">
-                            <span class="three-stars"></span>
+                        <a class="product-card-button button " href="#">Подбробнее</a>
+                        <button class="product-card__favorites light-button">В избранное</button>
+                        <div class="product-card__wrapper">
+                            <span class="product-card__rating-stars three-stars"></span>
                         </div>
                         <span class="product-card__rate">Рейтинг:8,5</span>
                     </li>
@@ -197,10 +195,10 @@
                         </a>
                         <span class="product-card__description">Гостиница</span>
                         <b class="product-card-price">От 4000 ₽</b>
-                        <a class="product-card-button " href="#">Подбробнее</a>
-                        <button class="product-card__favorites">В избранное</button>
-                        <div class="product-card__rating-stars">
-                            <span class="two-stars"></span>
+                        <a class="product-card-button button " href="#">Подбробнее</a>
+                        <button class="product-card__favorites light-button">В избранное</button>
+                        <div class="product-card__wrapper">
+                            <span class="product-card__rating-stars two-stars"></span>
                         </div>
                         <span class="product-card__rate">Рейтинг:8,5</span>
                     </li>
@@ -229,21 +227,27 @@
         </main>
         <footer class="page-footer">
             <div class="subscribe">
-                <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+                <h2 class="subscribe__title title-main">Подпишитесь на рассылку</h2>
                 <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <input class="subscibe__input" type="email" placeholder="Ваш e-mail" size="30" required>
-                <button class="subscribe__btn" type="submit">Подписаться</button>
+                <button class="subscribe__btn light-button" type="submit">Подписаться</button>
             </div>
             <div class="social">
                 <ul class="social__list">
                     <li class="social__item">
-                        <a href="https://vk.com/htmlacademy" class="social__link"></a>
+                        <a class="social__link-vk" href="https://vk.com/htmlacademy">
+                            <span class="visually-hidden">Мы в Вконтакте</span>
+                        </a>
                     </li>
                     <li class="social__item">
-                        <a href="https://web.telegram.org/k/#@htmlacademy" class="social__link"></a>
+                        <a class="social__link-telegram" href="https://web.telegram.org/k/#@htmlacademy" >
+                            <span class="visually-hidden">Мы в Телеграм</span>
+                        </a>
                     </li>
                     <li class="social__item">
-                        <a href="https://www.youtube.com/@HTMLAcademyRUS" class="social__link"></a>
+                        <a class="social__link-youtube" href="https://www.youtube.com/@HTMLAcademyRUS" >
+                            <span class="visually-hidden">Мы в Ютубе</span>
+                        </a>
                     </li>
                 </ul>
                 <a class="social__number" href="tel:88128121212">+7 (812) 812-12-12</a>
