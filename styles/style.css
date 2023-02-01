@@ -64,6 +64,7 @@ body {
     border-radius: 4px;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* Header */
