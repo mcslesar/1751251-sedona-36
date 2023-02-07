@@ -28,13 +28,13 @@
                     </ul>
                     <ul class="header-page__list">
                         <li class="header-page__item">
-                            <a class="header-page__link" href="#">
-                                <span class="vissualy-hidden">Поиск</span>
+                            <a class="header-page__link header-page__link-search" href="#">
+                                <span class="visually-hidden">Поиск</span>
                             </a>
                         </li>
                         <li class="header-page__item">
-                            <a class="header-page__link" href="index.html">
-                                <span class="vissualy-hidden">Избранное</span>
+                            <a class="header-page__link header-page__link-favorites " href="index.html">
+                                <span class="visually-hidden">Избранное</span>
                                 <span class="header-page__number">12</span>
                             </a>
                         </li>
@@ -129,21 +129,23 @@
                     </section>
                 </header>
                 <section class="apartaments">
-                    <h2 class="apartments__title">Найдено гостиниц:<span class="appartments__number">38</span></h2>
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="popular">Сначала дешёвые</option>
-                        <option value="cheap">Сначала популярное</option>
-                        <option value="expensive">Сначала дорогое</option>
-                    </select>
-                    <a href="#" class="apartments__button button--active">
-                        <span class="visually-hidden">Показать карточки</span>
-                    </a>
-                    <a class="apartments__button" href="#">
-                        <span class="visually-hidden">Показать одну карточку</span>
-                    </a>
-                    <a class="apartments__button" href="#">
-                        <span class="visually-hidden">Показать список</span>
-                    </a>
+                    <div class="apartaments__wrapper">
+                        <h2 class="apartments__title">Найдено гостиниц:<span class="appartments__number">38</span></h2>
+                        <select class="select-control" aria-label="Сортировка">
+                            <option value="popular">Сначала дешёвые</option>
+                            <option value="cheap">Сначала популярное</option>
+                            <option value="expensive">Сначала дорогое</option>
+                        </select>
+                        <a href="#" class="apartments__button button--active">
+                            <span class="visually-hidden">Показать карточки</span>
+                        </a>
+                        <a class="apartments__button" href="#">
+                            <span class="visually-hidden">Показать одну карточку</span>
+                        </a>
+                        <a class="apartments__button" href="#">
+                            <span class="visually-hidden">Показать список</span>
+                        </a>
+                    </div>
                     <ul class="product-list">
                         <li class="product-card">
                             <a class="product-card__link" href="№">
@@ -151,14 +153,18 @@
                                     src="images/main/card-item/hotel-1.jpg" alt="Расщелина в скале ночью.">
                                 <h3 class="product-card__title">Amara Resort & Spa</h3>
                             </a>
-                            <span class="product-card__description">Гостиница</span>
-                            <b class="product-card-price">От 4000 ₽</b>
-                            <a class="product-card-button button " href="#">Подбробнее</a>
-                            <button class="product-card__favorites light-button">В избранное</button>
+                            <div class="price__wrapper">
+                                <span class="product-card__description">Гостиница</span>
+                                <b class="product-card-price">От 4000 ₽</b>
+                            </div>
+                            <div class="button__wrapper">
+                                <a class="product-card-button button " href="#">Подбробнее</a>
+                                <button class="product-card__favorites light-button">В избранное</button>
+                            </div>
                             <div class="product-card__wrapper">
                                 <span class="product-card__rating-stars four-stars"></span>
+                                <span class="product-card__rate">Рейтинг:8,5</span>
                             </div>
-                            <span class="product-card__rate">Рейтинг:8,5</span>
                         </li>
                         <li class="product-card">
                             <a class="product-card__link" href="№">
@@ -166,14 +172,18 @@
                                     src="images/main/card-item/hotel-2.jpg" alt="Радуга, облачное небо и горы.">
                                 <h3 class="product-card__title">Amara Resort & Spa</h3>
                             </a>
-                            <span class="product-card__description">Гостиница</span>
-                            <b class="product-card-price">От 4000 ₽</b>
-                            <a class="product-card-button button " href="#">Подбробнее</a>
-                            <button class="product-card__favorites light-button">В избранное</button>
+                            <div class="price__wrapper">
+                                <span class="product-card__description">Гостиница</span>
+                                <b class="product-card-price">От 4000 ₽</b>
+                            </div>
+                            <div class="button__wrapper">
+                                <a class="product-card-button button " href="#">Подбробнее</a>
+                                <button class="product-card__favorites light-button">В избранное</button>
+                            </div>
                             <div class="product-card__wrapper">
                                 <span class="product-card__rating-stars four-stars"></span>
+                                <span class="product-card__rate">Рейтинг:8,5</span>
                             </div>
-                            <span class="product-card__rate">Рейтинг:8,5</span>
                         </li>
                         <li class="product-card">
                             <a class="product-card__link" href="#">
@@ -181,14 +191,18 @@
                                     src="images/main/card-item/hotel-3.jpg" alt="Солнечный день и скалы.">
                                 <h3 class="product-card__title">Amara Resort & Spa</h3>
                             </a>
-                            <span class="product-card__description">Гостиница</span>
-                            <b class="product-card-price">От 4000 ₽</b>
-                            <a class="product-card-button button " href="#">Подбробнее</a>
-                            <button class="product-card__favorites light-button">В избранное</button>
-                            <div class="product-card__wrapper">
-                                <span class="product-card__rating-stars three-stars"></span>
+                            <div class="price__wrapper">
+                                <span class="product-card__description">Гостиница</span>
+                                <b class="product-card-price">От 4000 ₽</b>
                             </div>
-                            <span class="product-card__rate">Рейтинг:8,5</span>
+                            <div class="button__wrapper">
+                                <a class="product-card-button button " href="#">Подбробнее</a>
+                                <button class="product-card__favorites light-button">В избранное</button>
+                            </div>
+                            <div class="product-card__wrapper">
+                                <span class="product-card__rating-stars four-stars"></span>
+                                <span class="product-card__rate">Рейтинг:8,5</span>
+                            </div>
                         </li>
                         <li class="product-card">
                             <a class="product-card__link" href="№">
@@ -196,14 +210,18 @@
                                     src="images/main/card-item/hotel-4.jpg" alt="Закат и гора.">
                                 <h3 class="product-card__title">Amara Resort & Spa</h3>
                             </a>
-                            <span class="product-card__description">Гостиница</span>
-                            <b class="product-card-price">От 4000 ₽</b>
-                            <a class="product-card-button button " href="#">Подбробнее</a>
-                            <button class="product-card__favorites light-button">В избранное</button>
-                            <div class="product-card__wrapper">
-                                <span class="product-card__rating-stars two-stars"></span>
+                            <div class="price__wrapper">
+                                <span class="product-card__description">Гостиница</span>
+                                <b class="product-card-price">От 4000 ₽</b>
                             </div>
-                            <span class="product-card__rate">Рейтинг:8,5</span>
+                            <div class="button__wrapper">
+                                <a class="product-card-button button " href="#">Подбробнее</a>
+                                <button class="product-card__favorites light-button">В избранное</button>
+                            </div>
+                            <div class="product-card__wrapper">
+                                <span class="product-card__rating-stars four-stars"></span>
+                                <span class="product-card__rate">Рейтинг:8,5</span>
+                            </div>
                         </li>
                     </ul>
                     <ul class="pagination">
