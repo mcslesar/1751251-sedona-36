@@ -143,6 +143,7 @@ body {
 }
 
 .header-page__link {
+    display: block;
     padding: 10px 0;
     font-weight: 700;
     text-decoration: none;
@@ -244,6 +245,7 @@ body {
 
 /* Advantages */
 .advantages {
+
     text-align: center;
     padding-top: 70px;
 }
@@ -258,24 +260,19 @@ body {
 }
 
 .advantages__item {
-    width: 400px;
     min-height: 385px;
 }
-
-.advantages__item:nth-child(2) {
-    width: 800px;
+.advantages__item-wide{
+    display: flex;
 }
-
-.advantages__item:nth-child(6) {
-    width: 800px;
+.advantages__item-wide-reverse{
+    display:flex;
+    flex-direction: row-reverse;
 }
-
 .advantages__image {
     display: block;
     object-fit: cover;
     height: 100%;
-    width: 100%;
-
 }
 
 .advantages__item:first-child,
@@ -289,23 +286,18 @@ body {
     color: inherit;
 }
 
-.advantages__item:nth-child(3),
-.advantages__item:nth-child(5) {
+.advantages__item:nth-child(2),
+.advantages__item:nth-child(4) {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages__item:nth-child(4) {
+.advantages__item:nth-child(3) {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 100%;
     width: 230px;
+    padding:90px 85px;
 }
 
 /* Service */
@@ -388,6 +380,7 @@ body {
 .search {
     text-align: center;
     padding-top: 64px;
+    padding-bottom: 96px;
 }
 
 .search__title {
@@ -407,7 +400,7 @@ body {
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
-    margin-bottom: 96px;
+
 }
 
 /* Subscribe */
@@ -493,8 +486,13 @@ body {
 }
 
 .social__link{
+    display: block;
     padding: 10px;
 
+}
+.social__link-logo{
+    display: block;
+    padding:10px
 }
 .social__number {
     font-size: 40px;
@@ -506,7 +504,7 @@ body {
 /* Catalog */
 /* header and breacrumbs */
 .main__header {
-    background-image: url(../images/main/filtres-background.png);
+    background-image: url(../images/main/filtres-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -680,41 +678,42 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 20px;
 }
 
 .product-card {
-    width: 300px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: 1fr auto;
+    gap:16px;
     padding: 20px;
     border: #E6E6E6 solid 1px;
     border-radius: 4px;
+
 }
 
 .product-card__link {
+    display: block;
+    grid-column: 1/-1;
     color: #000000;
     text-decoration: none;
 }
 
 .product-card__image {
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
 
 .product-card__title {
+    margin: 0;
+    margin-top: 16px;
     font-size: 24px;
     line-height: 28px;
 }
-
-.price__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    margin-bottom: 16px;
-}
-
 .product-card__description {
     display: inline-block;
     font-size: 18px;
@@ -730,25 +729,21 @@ body {
     font-weight: 400;
 }
 
-.button__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 16px;
-}
 
 .product-card-button {
     display: block;
+    align-self: center;
     text-decoration: none;
     font-size: 16px;
     line-height: 20px;
-    padding: 8px 24px;
+    padding: 8px 22px;
     width: 140px;
 
 }
 
 .product-card__favorites {
     display: block;
+    align-self: center;
     padding: 8px 20px;
     font-size: 16px;
     line-height: 20px;
@@ -760,11 +755,6 @@ body {
     display: inline-block;
     background: url(../images/main/card-item/star-icon.svg);
     height: 17px;
-}
-
-.product-card__wrapper {
-    display: flex;
-    align-items: center;
 }
 
 .one-star {
@@ -804,6 +794,7 @@ body {
 /* Pagination */
 .pagination {
     list-style-type: none;
+    padding: 0;
 }
 
 .pagination-item {
