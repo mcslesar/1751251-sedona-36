@@ -81,7 +81,7 @@
                         </li>
                         <li class="advantages__item">
                             <div class="advantages__wrapper">
-                                <h3 class="advantages__title box-title">Красивая </br>
+                                <h3 class="advantages__title box-title">Красивая <br></br>
                                     дорога</h3>
                                 <p class="advantages__text box-subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!
                                 </p>
@@ -151,7 +151,7 @@
                 <div class="subscribe subscribe_bg">
                     <h2 class="subscribe__title title-main">Подпишитесь на рассылку</h2>
                     <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-                    <form action="" class="subscribe__form">
+                    <form action="https://echo.htmlacademy.ru/" class="subscribe__form" method="get">
                         <input class="subscribe__input" type="email" placeholder="Ваш e-mail" size="30" required>
                         <button class="subscribe__btn light-button" type="submit">Подписаться</button>
                     </form>
@@ -237,19 +237,19 @@
                         <h2 class="modal-title title-main">Поиск гостиницы в Седоне</h2>
                         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="get">
                             <div class="field-group">
-                                <label class="modal-label" for="date-field">Дата Заезда:</label>
+                                <label class="modal-label" for="date-in">Дата Заезда:</label>
                                 <div class="date-wrapper">
-                                <input class="date-field field" type="text" id="date-field" name="date-field"
-                                    value="27 апреля 2020" placeholder="Укажите дату">
+                                    <input class="date-field field" type="text" id="date-in" name="date-field"
+                                        value="27 апреля 2020" placeholder="Укажите дату">
                                     <span class="field-text text-wrong">Мы не можем отправить вас в прошлое.</span>
                                 </div>
 
                             </div>
                             <div class="field-group">
-                                <label class="modal-label" for="auth-password">Дата Выезда:</label>
+                                <label class="modal-label" for="date-out">Дата Выезда:</label>
                                 <div class="date-wrapper">
-                                <input class="date-field field" value="1 сентября 2023" placeholder="Укажите дату"
-                                    type="text" id="date-field" name="date-field">
+                                    <input class="date-field field" value="1 сентября 2023" placeholder="Укажите дату"
+                                        type="text" id="date-out" name="date-field">
                                     <span class="field-text">На эти даты есть свободные номера. Пока есть.</span>
                                 </div>
                             </div>
@@ -289,8 +289,8 @@
                                                     role="tooltip">Укажите количество детей, которые будут с вами,
                                                     возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
                                                     бесплатно.</span>
+                                            </span>
                                         </label>
-                                    </span>
                                     </span>
                                     <button class="number-minus" type="button">
                                         <svg class="number-minus-icon" width="20" height="20" viewBox="0 0 20 20"
@@ -308,11 +308,11 @@
                                 </div>
                             </div>
                             <a class="light-button modal__search" href="#">Найти</a>
+                        </form>
+                    </section>
                 </div>
-
-                </form>
-                </section>
             </div>
+        </div>
     </body>
 
 </html>

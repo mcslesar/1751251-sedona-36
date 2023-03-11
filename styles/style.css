@@ -1535,7 +1535,10 @@ filter__button:last-child:active {
     height: 26px;
     margin-left: 10px;
 }
-
+.tooltip-label{
+    align-items: center;
+    display: flex;
+}
 .tooltip-toggle {
     border: none;
     background-color: transparent;
