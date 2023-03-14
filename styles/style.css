@@ -208,7 +208,7 @@ body {
 }
 
 .header-page__list:last-of-type .header-page__item:first-child {
-    margin-right: 26px;
+    margin-right: 23px;
 }
 
 .header-page__link {
@@ -301,7 +301,7 @@ body {
     background-color: #7DB54F;
     border-radius: 50%;
     left: 8px;
-    top: 12px;
+    top: 10px;
 }
 
 /* Promo */
@@ -521,8 +521,9 @@ body {
 }
 
 .search__title {
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 20px;
+    max-width: 600px;
 }
 
 .search__description {
@@ -537,14 +538,15 @@ body {
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
+    max-width: 500px;
 
 }
 
 /* Subscribe */
 .subscribe {
     text-align: center;
-    padding-top: 96px;
-    padding-bottom: 104px;
+    padding-top: 98px;
+    padding-bottom: 103px;
 
 }
 .subscribe__form {
@@ -572,7 +574,8 @@ body {
 }
 
 .subscribe__title {
-    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
 
@@ -603,7 +606,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 41px 70px 48px;
+    padding: 43px 70px 48px;
 }
 
 .social__list {
@@ -696,7 +699,7 @@ body {
     color: #ffffff;
     margin: 0 auto;
     background-color: #000000;
-    padding: 35px 70px 72px 70px;
+    padding: 35px 70px 70px 70px;
 }
 
 .main__title {
@@ -704,7 +707,7 @@ body {
     line-height: 78px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .breadcrumbs-list {
@@ -714,7 +717,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 37px;
+    margin-bottom: 39px;
 }
 
 .breadcrumbs-link {
@@ -765,7 +768,7 @@ body {
 }
 
 .catalog-filter-group:first-child {
-    margin-right: 65px;
+    margin-right: 66px;
 }
 
 .catalog-filter-group:nth-child(2) {
@@ -869,7 +872,7 @@ body {
     margin-left: auto;
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
+    padding-top: 57px;
     gap: 32px;
 }
 
@@ -1024,7 +1027,7 @@ filter__button:last-child:active {
 /* Apartments */
 .apartaments {
     width: 1060px;
-    padding-top: 52px;
+    padding-top: 48px;
     margin: 0 auto;
 }
 
@@ -1056,6 +1059,7 @@ filter__button:last-child:active {
     background-image: url(../images/main/arrow-down.svg);
     background-repeat: no-repeat;
     background-position: right 20px center;
+    margin-right: 10px;
 }
 
 .select-control:hover {
@@ -1125,7 +1129,7 @@ filter__button:last-child:active {
 .product-card {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(2, 140px);
+    grid-template-columns: repeat(2, 142px);
     grid-template-rows: 1fr auto;
     gap: 16px;
     padding: 20px;
@@ -1212,7 +1216,7 @@ filter__button:last-child:active {
 }
 
 .two-stars {
-    width: 30px;
+    width: 25px;
 }
 
 .three-stars {
@@ -1258,7 +1262,7 @@ filter__button:last-child:active {
     gap: 8px;
     padding: 0;
     list-style-type: none;
-    padding-top: 40px;
+    padding-top: 41px;
     padding-bottom: 38px;
 }
 
@@ -1344,7 +1348,7 @@ filter__button:last-child:active {
 
 .modal-container {
     display: none;
-    z-index: 3;
+    z-index: 6;
     position: fixed;
     top: 0;
     left: 0;
