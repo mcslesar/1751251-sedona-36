@@ -272,7 +272,7 @@ body {
     text-transform: uppercase;
 
 }
-.header-page__btn:focus{
+.header-page__btn:focus, .header-page__btn:hover{
     color: #fff;
 }
 .header-page__list {
