@@ -1260,6 +1260,7 @@ filter__button:last-child:active {
     position: relative;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     padding: 0;
     list-style-type: none;
