@@ -443,7 +443,7 @@ body {
 
 .service__item {
     padding: 81px 85px;
-    width: 400px;
+
 }
 
 .service__list {
@@ -451,6 +451,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -516,7 +517,7 @@ body {
 /* Search */
 .search {
     text-align: center;
-    padding-top: 96px;
+    padding-top: 94px;
     padding-bottom: 96px;
 }
 
@@ -529,7 +530,7 @@ body {
 .search__description {
     width: 592px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 54px;
 }
 
 .search__link {
@@ -585,7 +586,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 96px;
-    padding-bottom: 108px;
+    padding-bottom: 103px;
 }
 
 .subscribe__btn {
