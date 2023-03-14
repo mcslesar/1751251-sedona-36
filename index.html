@@ -3,6 +3,8 @@
 
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML Academy: Седона</title>
         <link rel="stylesheet" href="styles/style.css">
     </head>
@@ -46,6 +48,7 @@
                     </ul>
                 </nav>
             </header>
+             <!-- Main -->
             <main class="main__container">
                 <!-- Promo -->
                 <section class="promo">
@@ -155,8 +158,8 @@
                 <div class="subscribe subscribe_bg">
                     <h2 class="subscribe__title title-main">Подпишитесь на рассылку</h2>
                     <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-                    <form action="https://echo.htmlacademy.ru/" class="subscribe__form" method="get">
-                        <input class="subscribe__input subscribe__input--grey" type="email" placeholder="Ваш e-mail"
+                    <form action="https://echo.htmlacademy.ru/" class="subscribe__form" method="post">
+                        <input class="subscribe__input subscribe__input--grey" name="email" type="email" placeholder="Ваш e-mail"
                             size="30" required>
                         <button class="subscribe__btn light-button" type="submit">Подписаться</button>
                     </form>
@@ -234,6 +237,7 @@
                         </svg></a>
                 </div>
             </footer>
+            <!-- modal -->
             <div class="modal-container modal-container-close">
                 <div class="modal modal-auth">
                     <section class="modal-content">
@@ -313,12 +317,11 @@
                                     </button>
                                 </div>
                             </div>
-                            <button type="submit" class="light-button modal__search" href="#">Найти</button>
+                            <button type="submit" class="light-button modal__search">Найти</button>
                         </form>
                     </section>
                 </div>
             </div>
         </div>
     </body>
-
 </html>
