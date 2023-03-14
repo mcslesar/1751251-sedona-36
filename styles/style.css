@@ -1332,17 +1332,22 @@ filter__button:last-child:active {
     box-sizing: border-box;
     position: relative;
     width: 717px;
+    max-height: 100vh;
+    overflow-y: scroll;
     background: #FFFFFF;
     opacity: 1;
     padding: 64px 70px;
     border-radius: 30px;
 }
-
+.modal-auth::-webkit-scrollbar {
+    width: 0;
+}
 .modal-content {
     position: relative;
 }
 
 .modal-container {
+    display: none;
     z-index: 3;
     position: fixed;
     top: 0;
@@ -1625,7 +1630,8 @@ filter__button:last-child:active {
 
 .number__wrapper .field-group:last-child .modal-label {
     margin: 0;
-    padding-right: 82px;
+    padding-right: 37px;
+    margin-right: 45px;
 }
 
 .tooltip-text:after {
