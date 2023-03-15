@@ -656,6 +656,7 @@ body {
 
 .subscribe_bg {
     background-image: url(../images/main/subscribe-background.png);
+    background-color: #372F3B;
     color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
