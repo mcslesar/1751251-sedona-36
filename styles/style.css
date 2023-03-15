@@ -1524,7 +1524,7 @@ filter__button:last-child:active {
 }
 
 .modal-container {
-
+    display: none;
     z-index: 6;
     position: fixed;
     top: 0;
