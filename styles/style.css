@@ -312,7 +312,7 @@ body {
     margin-left: auto;
 }
 
-.header-page__list:last-of-type .header-page__item:nth-child(2) .header-page__link {
+.header-page__link-favorites {
     position: relative;
 }
 
@@ -987,7 +987,7 @@ body {
 }
 
 .filter__button {
-    font-family: 'PT Sans';
+    font-family: inherit;
     display: block;
     max-width: 190px;
     font-size: 16px;
@@ -1078,7 +1078,7 @@ filter__button:last-child:active {
     position: absolute;
     content: "от";
     color: black;
-    font-family: 'PT Sans';
+    font-family:  inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -1524,7 +1524,7 @@ filter__button:last-child:active {
 }
 
 .modal-container {
-    display: none;
+
     z-index: 6;
     position: fixed;
     top: 0;
@@ -1587,7 +1587,7 @@ filter__button:last-child:active {
 }
 
 .modal-label {
-    font-family: 'PT Sans';
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -1618,7 +1618,7 @@ filter__button:last-child:active {
     padding: 12px 20px;
     padding-right: 50px;
     color: #000000;
-    font-family: 'PT Sans';
+    font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     position: relative;
@@ -1639,7 +1639,6 @@ filter__button:last-child:active {
 }
 
 .field-text {
-    font-family: 'PT Sans';
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -1662,7 +1661,7 @@ filter__button:last-child:active {
             justify-content: flex-start;
 }
 
-.number__wrapper .field-group .control-input {
+.number__wrapper  .control-input {
     width: 31px;
     padding: 14px 10px;
     -webkit-box-sizing: border-box;
@@ -1670,15 +1669,14 @@ filter__button:last-child:active {
     border: none;
     background: #F2F2F2;
     color: #000;
-    font-family: 'PT Sans';
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     z-index: 2;
 }
 
-.number__wrapper .field-group .control-input::-webkit-outer-spin-button,
-.number__wrapper .field-group .control-input::-webkit-inner-spin-button {
+.number__wrapper  .control-input::-webkit-outer-spin-button,
+.number__wrapper  .control-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
@@ -1816,7 +1814,6 @@ filter__button:last-child:active {
 .tooltip-text {
     background-color: #242424;
     color: #ffffff;
-    font-family: 'PT Sans';
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -1840,7 +1837,7 @@ filter__button:last-child:active {
     display: block;
 }
 
-.number__wrapper .field-group:last-child .modal-label {
+.child-label{
     margin: 0;
     padding-right: 37px;
     margin-right: 45px;
