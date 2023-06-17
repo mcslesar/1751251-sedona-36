@@ -4,21 +4,24 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>HTML Academy: Седона</title>
         <link rel="stylesheet" href="styles/style.css">
         <link rel="icon" href="images/main/favicon.png">
+
     </head>
 
     <body>
         <div class="container">
             <!-- header -->
-            <header class="header-page">
-                <nav class="header-page__nav">
-                    <a href="index.html" class="header__page-logo-link">
-                        <img class="header-page__logo" src="images/header/logo.svg" width="138" height="64"
-                            alt="Логотип Седона.">
-                    </a>
+            <header class="header-page open">
+                <a href="index.html" class="header__page-logo-link">
+                    <img class="header-page__logo" src="images/header/logo.svg" width="138" height="64"
+                        alt="Логотип Седона.">
+                </a>
+                <nav class="header-page__nav ">
+
+
                     <ul class="header-page__list">
                         <li class="header-page__item">
                             <a class="header-page__link header-page__link--active" href="index.html">Главная</a>
@@ -46,8 +49,15 @@
                         <li class="header-page__item">
                             <a class="header-page__link header-page__btn button" href="#">Хочу сюда!</a>
                         </li>
+
                     </ul>
+
                 </nav>
+                <button id="burger" class="header__burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </header>
              <!-- Main -->
             <main class="main__container">
@@ -325,4 +335,5 @@
             </div>
         </div>
     </body>
+    <script defer src="js/main.js"></script>
 </html>
